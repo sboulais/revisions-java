@@ -1,4 +1,4 @@
-package bestpractices.patterns;
+package bestpractices.patternmatching;
 
 class Main {
     void main() {
