@@ -1,4 +1,4 @@
-package bestpractices.staticfactorymethod;
+package bestpractices.factorymethods;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

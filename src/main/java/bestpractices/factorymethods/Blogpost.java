@@ -1,4 +1,4 @@
-package bestpractices.staticfactorymethod;
+package bestpractices.factorymethods;
 
 class Blogpost {
     private String title;

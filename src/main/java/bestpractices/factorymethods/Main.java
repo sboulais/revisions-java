@@ -1,4 +1,4 @@
-package bestpractices.staticfactorymethod;
+package bestpractices.factorymethods;
 
 import java.util.Map;
 
