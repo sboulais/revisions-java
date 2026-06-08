@@ -1,9 +1,14 @@
 package bestpractices.patternmatching;
 
 class Main {
+
     void main() {
 
-        // --- InstanceOf Pattern Matching ---
+        /**
+         * - Si obj est une String, la variable str est automatiquement créée et contient la valeur castée
+         * - Sinon, si obj est un Integer, la variable num est créée avec la valeur castée
+         * - Affiche le résultat correspondant
+         */
 
         //Object obj = "Bonjour";
         Object obj = 45;
@@ -14,14 +19,25 @@ class Main {
             System.out.println("Nombre: " + num);
         }
 
-        // --- Egalité ---
+        /**
+         * - Vérifie que user est une instance de UserRecord
+         * - Déstructure automatiquement l'objet pour extraire name et email
+         * - Rend ces variables disponibles directement dans le bloc if
+         */
+        Object user = new UserRecord(
+                "Sébastien",
+                "sebastien.boulais@outlook.fr"
+        );
 
-        var voiture = new Vehicule("Voiture", 4, 200);
-        var velo = new Vehicule("Vélo", 2, 30);
-        var peugeot2008 = new Vehicule("Voiture", 4, 200);
+        if (user instanceof UserRecord(var name, var email)) {
+            System.out.println("Name : " + name);
+            System.out.println("Email : " + email);
+        }
 
-        System.out.println(voiture.equals(velo));
-        System.out.println(voiture.equals(peugeot2008));
-        System.out.println(peugeot2008.equals(velo));
+        // Dans cet exemple, l'email ne nous interesse pas :
+
+        if (user instanceof UserRecord(var name, _)) {
+            System.out.println("Name : " + name);
+        }
     }
 }
